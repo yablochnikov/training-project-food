@@ -1,3 +1,4 @@
 # training-project-food
-js practice 
-switch to master branch
+I'm just practicing
+
+Switch to master branch
