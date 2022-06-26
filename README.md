@@ -1,3 +1,3 @@
 # training-project-food
 js practice 
-switch to master brench
+switch to master branch
