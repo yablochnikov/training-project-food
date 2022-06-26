@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/yablochnikov/training-project-food/issues"
   },
-  "homepage": "https://github.com/yablochnikov/training-project-food#readme"
+  "homepage": "https://github.com/yablochnikov/training-project-food#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
 }
