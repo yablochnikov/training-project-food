@@ -199,13 +199,20 @@ window.addEventListener('DOMContentLoaded', () => {
     return await res.json();
   };
 
-  getResources('http://localhost:3000/menu')
-    .then(data => {
-      data.forEach(({img, altimg, title, descr, price}) => {
-        new Card(img, altimg, title, descr, price, '.menu .container').createCard();
-      });
-    });
+  // getResources('http://localhost:3000/menu')
+  //   .then(data => {
+  //     data.forEach(({img, altimg, title, descr, price}) => {
+  //       new Card(img, altimg, title, descr, price, '.menu .container').createCard();
+  //     });
+  //   });
   
+  axios.get('http://localhost:3000/menu')
+  .then(obj => {
+    obj.data.forEach(({img, altimg, title, descr, price}) => {
+      new Card(img, altimg, title, descr, price, '.menu .container').createCard();
+    });
+  });
+    
   // forms
 
   const forms = document.querySelectorAll('form');
