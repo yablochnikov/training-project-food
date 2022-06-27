@@ -316,4 +316,50 @@ window.addEventListener('DOMContentLoaded', () => {
   fetch('db.json')
     .then(data => data.json())
     .then(res => console.log(res));
+
+  // carousel
+
+  // default slider 
+
+  // const sliderBtnPrev = document.querySelector('.offer__slider-prev'),
+  //       sliderBtnNext = document.querySelector('.offer__slider-next'),
+  //       sliderItems = document.querySelectorAll('.offer__slide');
+
+  // let id = 0,
+  //     sliderTotalCounter = document.querySelector('#total'),
+  //     sliderCurrentCounter = document.querySelector('#current');
+
+  // function showSlide(id) {
+  //   sliderItems.forEach((img, index) => {
+  //     img.classList.add('hide');
+  //     img.classList.remove('show');
+  //     if(id === index) {
+  //       img.classList.add('show');
+  //       sliderCurrentCounter.innerHTML = id >= 9 ? index + 1 : `0${index+1}`; 
+  //     }
+  //   });
+  // }
+
+  // sliderTotalCounter.innerHTML = sliderItems.length >= 10 ? sliderItems.length : `0${sliderItems.length}`;
+
+  // sliderBtnPrev.addEventListener('click', () => {
+  //   id--;
+  //   if(id < 0) {
+  //     id = sliderItems.length - 1;
+  //   }
+  //   console.log(id);
+  //   showSlide(id);
+  // });
+
+  // sliderBtnNext.addEventListener('click', () => {
+  //   id++;
+  //   if(id > sliderItems.length - 1) {
+  //     id = 0;
+  //   }
+  //   console.log(id);
+  //   showSlide(id);
+  // });
+
+  // showSlide(id);
+
 });
